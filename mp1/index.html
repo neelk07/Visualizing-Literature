@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>CS398 VL - MP1 - nkothar2</title>
+    
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+  </head>
+  
+<body>
+<style>
+
+path {
+  stroke: #fff;
+  fill-rule: evenodd;
+}
+
+text {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+</style>
+<body>
+    
+ <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#jumbotron">Visualization</a></li>
+          <li><a href="#info">About</a></li>
+          <li><a href="https://github.com/neelk07/CS398VL">Code</a></li>
+        </ul>
+        <h4>CS398 VL - MP1 - "The Once and Future King" (Chp 1-4) by Neel Kothari</h4>
+      </div>
+
+      <div class="jumbotron"></div>
+
+      <div class="row marketing" id="info">
+        <div class="col-lg-6">
+          <h4>What is this?</h4>
+          <p>This is a D3.js visualization of the first four chapters of "The Once and Future King". Something such as this can provide valuable information about the content of the story and also the important aspects such as characters and adjectives. The code is available on <a href="https://github.com/neelk07/CS398VL">github</a>!</p>
+
+          <h4>How data was obtained?</h4>
+          <p>Using the publicly available data, the Python NLTK library, and D3.JS Javascript library, this visualization was created.</p>
+          <p>1) Text files were parsed and tokenized</p>
+          <p>2) Unnecessary tokens were removed such as commas, stop words, and non-alphabetic symbols </p>
+          <p>3) Used NLTK to take frequencies of all tokens and only saved top 50 from  each chapter</p>
+          <p>4) Fed these remaining tokens in the Part of Speech tagger in NLTK</p>
+          <p>5) Result = top 50 most frequent words from each chapter sorted by part of speech and also number of times used</p>
+          <p> Most of data cleaning is available in setup.py in the repo!</p>
+        </div>
+            
+        <div class="col-lg-6">
+          <h4>Significance of Visualization (In Progress...)</h4>
+          <h5><u>Chapter 1</u></h5>
+          <p>If we check the nouns for chapter 1 in the visualization, we see the introduction of "Ector", "Kay" who eventually becomes known as the "Wart". The major change in the plot with the boys going into the field can be visualized by "forest" and "boys".</p>
+          <h5><u>Chapter 2</u></h5>
+          <p>Introduction of the character "King Pellinore" and his quest to hunt the magical "beast".</p>
+          <h5><u>Chapter 3</u></h5>
+          <p>Introduction of Merlyn and his cottage.</p>
+          <h5><u>Chapter 4</u></h5>
+          <p>We see an alliance form between "Merlyn" and "Sir Ector" as well as his hot temper.</p>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Neel Kothari 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- D3.JS Visualization -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>main();</script>
+  </body>
+</html>

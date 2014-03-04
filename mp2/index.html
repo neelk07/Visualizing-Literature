@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>CS398 VL - MP2 - nkothar2</title>
+    
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+  </head>
+  
+<body>
+<style>
+.node {
+    cursor: pointer;
+  }
+
+  .overlay{
+      background-color:#EEE;
+  }
+   
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+   
+  .node text {
+    font-size:10px; 
+    font-family:sans-serif;
+  }
+   
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show{
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle{
+       display: none;
+  }
+
+</style>
+<body>
+    
+ <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#jumbotron">Visualization</a></li>
+          <li><a href="#info">About</a></li>
+          <li><a href="https://github.com/neelk07/CS398VL">Code</a></li>
+        </ul>
+        <h4>CS398 VL - MP1 - "The Once and Future King" (Chp 1-4) by Neel Kothari</h4>
+      </div>
+
+      
+    <div id="tree-container"></div>
+  
+
+      <div class="footer">
+        <p>&copy; Neel Kothari 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- D3.JS Visualization -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>main();</script>
+  </body>
+</html>

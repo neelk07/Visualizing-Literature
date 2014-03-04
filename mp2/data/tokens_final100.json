@@ -1,0 +1,2010 @@
+{
+    "chp1": [
+        {
+            "POS": "VBD", 
+            "freq": 633, 
+            "word": "said"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 461, 
+            "word": "wart"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 337, 
+            "word": "like"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 311, 
+            "word": "sir"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 288, 
+            "word": "one"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 274, 
+            "word": "would"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 211, 
+            "word": "could"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 206, 
+            "word": "merlyn"
+        }, 
+        {
+            "POS": "VBG", 
+            "freq": 198, 
+            "word": "king"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 191, 
+            "word": "kay"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 169, 
+            "word": "ector"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 159, 
+            "word": "well"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 148, 
+            "word": "go"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 138, 
+            "word": "time"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 128, 
+            "word": "two"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 123, 
+            "word": "come"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 123, 
+            "word": "know"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 123, 
+            "word": "pellinore"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 121, 
+            "word": "grummore"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 120, 
+            "word": "good"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 120, 
+            "word": "think"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 118, 
+            "word": "man"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 114, 
+            "word": "old"
+        }, 
+        {
+            "POS": "VBP", 
+            "freq": 114, 
+            "word": "see"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 110, 
+            "word": "back"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 100, 
+            "word": "say"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 94, 
+            "word": "way"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 91, 
+            "word": "made"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 90, 
+            "word": "away"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 90, 
+            "word": "boy"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 89, 
+            "word": "get"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 89, 
+            "word": "went"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 88, 
+            "word": "came"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 86, 
+            "word": "began"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 86, 
+            "word": "round"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 85, 
+            "word": "right"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 84, 
+            "word": "cried"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 84, 
+            "word": "got"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 83, 
+            "word": "even"
+        }, 
+        {
+            "POS": "JJS", 
+            "freq": 82, 
+            "word": "forest"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 82, 
+            "word": "oh"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 82, 
+            "word": "shall"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 81, 
+            "word": "look"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 78, 
+            "word": "head"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 76, 
+            "word": "never"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 74, 
+            "word": "first"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 74, 
+            "word": "little"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 72, 
+            "word": "end"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 72, 
+            "word": "long"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 72, 
+            "word": "put"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 72, 
+            "word": "robin"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 71, 
+            "word": "still"
+        }, 
+        {
+            "POS": "PRP", 
+            "freq": 70, 
+            "word": "us"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 69, 
+            "word": "much"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 69, 
+            "word": "people"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 69, 
+            "word": "thing"
+        }, 
+        {
+            "POS": "VBG", 
+            "freq": 67, 
+            "word": "going"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 66, 
+            "word": "looked"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 66, 
+            "word": "master"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 65, 
+            "word": "eyes"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 65, 
+            "word": "must"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 64, 
+            "word": "stood"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 63, 
+            "word": "night"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 62, 
+            "word": "asked"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 62, 
+            "word": "take"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 62, 
+            "word": "upon"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 61, 
+            "word": "great"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 61, 
+            "word": "without"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 60, 
+            "word": "boys"
+        }, 
+        {
+            "POS": "DT", 
+            "freq": 59, 
+            "word": "every"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 59, 
+            "word": "thought"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 58, 
+            "word": "side"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 58, 
+            "word": "three"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 57, 
+            "word": "took"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 57, 
+            "word": "yes"
+        }, 
+        {
+            "POS": "VBZ", 
+            "freq": 56, 
+            "word": "archimedes"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 56, 
+            "word": "castle"
+        }, 
+        {
+            "POS": "DT", 
+            "freq": 55, 
+            "word": "another"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 55, 
+            "word": "day"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 55, 
+            "word": "together"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 54, 
+            "word": "beast"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 53, 
+            "word": "found"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 53, 
+            "word": "last"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 53, 
+            "word": "might"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 53, 
+            "word": "poor"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 53, 
+            "word": "quite"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 52, 
+            "word": "sword"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 52, 
+            "word": "turned"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 51, 
+            "word": "make"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 50, 
+            "word": "keep"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 50, 
+            "word": "may"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 50, 
+            "word": "tell"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 50, 
+            "word": "things"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 49, 
+            "word": "feet"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 49, 
+            "word": "tree"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 48, 
+            "word": "also"
+        }, 
+        {
+            "POS": "JJR", 
+            "freq": 48, 
+            "word": "better"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 47, 
+            "word": "air"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 47, 
+            "word": "hounds"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 47, 
+            "word": "kind"
+        }
+    ], 
+    "chp2": [
+        {
+            "POS": "VBD", 
+            "freq": 260, 
+            "word": "said"
+        }, 
+        {
+            "POS": "VBG", 
+            "freq": 186, 
+            "word": "king"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 140, 
+            "word": "one"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 135, 
+            "word": "could"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 131, 
+            "word": "would"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 124, 
+            "word": "like"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 121, 
+            "word": "sir"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 90, 
+            "word": "grummore"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 78, 
+            "word": "arthur"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 78, 
+            "word": "merlyn"
+        }, 
+        {
+            "POS": "VBZ", 
+            "freq": 72, 
+            "word": "palomides"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 72, 
+            "word": "see"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 72, 
+            "word": "well"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 68, 
+            "word": "gawaine"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 68, 
+            "word": "old"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 65, 
+            "word": "must"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 65, 
+            "word": "think"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 63, 
+            "word": "beast"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 62, 
+            "word": "come"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 62, 
+            "word": "good"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 62, 
+            "word": "man"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 62, 
+            "word": "pellinore"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 59, 
+            "word": "say"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 56, 
+            "word": "go"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 55, 
+            "word": "away"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 55, 
+            "word": "gareth"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 55, 
+            "word": "people"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 54, 
+            "word": "head"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 54, 
+            "word": "two"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 52, 
+            "word": "mother"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 52, 
+            "word": "round"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 51, 
+            "word": "knights"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 51, 
+            "word": "time"
+        }, 
+        {
+            "POS": "PRP", 
+            "freq": 49, 
+            "word": "us"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 48, 
+            "word": "agravaine"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 48, 
+            "word": "began"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 47, 
+            "word": "know"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 47, 
+            "word": "thing"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 46, 
+            "word": "look"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 45, 
+            "word": "queen"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 44, 
+            "word": "oh"
+        }, 
+        {
+            "POS": "VBG", 
+            "freq": 43, 
+            "word": "going"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 43, 
+            "word": "lot"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 43, 
+            "word": "something"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 42, 
+            "word": "even"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 42, 
+            "word": "might"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 42, 
+            "word": "way"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 41, 
+            "word": "battle"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 41, 
+            "word": "unicorn"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 40, 
+            "word": "made"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 38, 
+            "word": "went"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 37, 
+            "word": "came"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 37, 
+            "word": "right"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 37, 
+            "word": "war"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 36, 
+            "word": "back"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 36, 
+            "word": "castle"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 36, 
+            "word": "make"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 36, 
+            "word": "never"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 36, 
+            "word": "thought"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 35, 
+            "word": "ca"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 34, 
+            "word": "get"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 33, 
+            "word": "got"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 33, 
+            "word": "ought"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 33, 
+            "word": "perhaps"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 32, 
+            "word": "men"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 31, 
+            "word": "tell"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 30, 
+            "word": "called"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 30, 
+            "word": "kay"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 30, 
+            "word": "night"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 30, 
+            "word": "take"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 29, 
+            "word": "behind"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 29, 
+            "word": "day"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 29, 
+            "word": "looked"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 29, 
+            "word": "side"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 29, 
+            "word": "want"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 28, 
+            "word": "asked"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 28, 
+            "word": "let"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 27, 
+            "word": "catch"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 27, 
+            "word": "fight"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 27, 
+            "word": "first"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 27, 
+            "word": "gaheris"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 27, 
+            "word": "meg"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 27, 
+            "word": "shall"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 27, 
+            "word": "sort"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 27, 
+            "word": "still"
+        }, 
+        {
+            "POS": "VBZ", 
+            "freq": 27, 
+            "word": "thelmselves"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 27, 
+            "word": "yes"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 26, 
+            "word": "eyes"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 26, 
+            "word": "ones"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 25, 
+            "word": "cried"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 25, 
+            "word": "fellow"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 25, 
+            "word": "keep"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 25, 
+            "word": "little"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 25, 
+            "word": "love"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 25, 
+            "word": "magician"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 25, 
+            "word": "mean"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 25, 
+            "word": "stop"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 25, 
+            "word": "told"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 24, 
+            "word": "dear"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 24, 
+            "word": "done"
+        }
+    ], 
+    "chp3": [
+        {
+            "POS": "NN", 
+            "freq": 577, 
+            "word": "lancelot"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 507, 
+            "word": "said"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 303, 
+            "word": "would"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 297, 
+            "word": "sir"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 266, 
+            "word": "like"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 259, 
+            "word": "one"
+        }, 
+        {
+            "POS": "VBG", 
+            "freq": 240, 
+            "word": "king"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 227, 
+            "word": "could"
+        }, 
+        {
+            "POS": "PRP$", 
+            "freq": 202, 
+            "word": "arthur"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 184, 
+            "word": "man"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 172, 
+            "word": "queen"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 169, 
+            "word": "knight"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 162, 
+            "word": "guenever"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 146, 
+            "word": "elaine"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 145, 
+            "word": "people"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 141, 
+            "word": "time"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 137, 
+            "word": "came"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 136, 
+            "word": "know"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 135, 
+            "word": "made"
+        }, 
+        {
+            "POS": "VBP", 
+            "freq": 134, 
+            "word": "go"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 129, 
+            "word": "away"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 122, 
+            "word": "well"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 122, 
+            "word": "went"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 115, 
+            "word": "see"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 114, 
+            "word": "might"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 113, 
+            "word": "love"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 111, 
+            "word": "come"
+        }, 
+        {
+            "POS": "VBZ", 
+            "freq": 111, 
+            "word": "knights"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 106, 
+            "word": "back"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 106, 
+            "word": "must"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 101, 
+            "word": "good"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 98, 
+            "word": "first"
+        }, 
+        {
+            "POS": "VBP", 
+            "freq": 97, 
+            "word": "castle"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 95, 
+            "word": "two"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 93, 
+            "word": "thing"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 92, 
+            "word": "god"
+        }, 
+        {
+            "POS": "VBP", 
+            "freq": 92, 
+            "word": "think"
+        }, 
+        {
+            "POS": "VBP", 
+            "freq": 90, 
+            "word": "say"
+        }, 
+        {
+            "POS": "JJS", 
+            "freq": 88, 
+            "word": "best"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 88, 
+            "word": "galahad"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 88, 
+            "word": "great"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 86, 
+            "word": "way"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 84, 
+            "word": "get"
+        }, 
+        {
+            "POS": "VBG", 
+            "freq": 82, 
+            "word": "going"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 82, 
+            "word": "looked"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 81, 
+            "word": "fight"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 80, 
+            "word": "gawaine"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 78, 
+            "word": "bors"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 78, 
+            "word": "never"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 78, 
+            "word": "thought"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 77, 
+            "word": "knew"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 77, 
+            "word": "lady"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 77, 
+            "word": "things"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 75, 
+            "word": "still"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 75, 
+            "word": "tell"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 75, 
+            "word": "want"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 71, 
+            "word": "began"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 71, 
+            "word": "even"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 71, 
+            "word": "head"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 71, 
+            "word": "old"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 69, 
+            "word": "got"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 69, 
+            "word": "make"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 68, 
+            "word": "left"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 68, 
+            "word": "round"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 67, 
+            "word": "table"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 66, 
+            "word": "asked"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 65, 
+            "word": "perhaps"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 64, 
+            "word": "hand"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 61, 
+            "word": "felt"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 60, 
+            "word": "day"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 60, 
+            "word": "hands"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 60, 
+            "word": "without"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 60, 
+            "word": "world"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 59, 
+            "word": "horse"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 59, 
+            "word": "put"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 59, 
+            "word": "saw"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 58, 
+            "word": "ca"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 58, 
+            "word": "life"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 57, 
+            "word": "heart"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 57, 
+            "word": "long"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 57, 
+            "word": "together"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 56, 
+            "word": "everybody"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 56, 
+            "word": "face"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 56, 
+            "word": "look"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 56, 
+            "word": "something"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 55, 
+            "word": "sword"
+        }, 
+        {
+            "POS": "PRP$", 
+            "freq": 54, 
+            "word": "armour"
+        }, 
+        {
+            "POS": "VBZ", 
+            "freq": 54, 
+            "word": "eyes"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 54, 
+            "word": "last"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 54, 
+            "word": "side"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 53, 
+            "word": "help"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 53, 
+            "word": "three"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 53, 
+            "word": "uncle"
+        }, 
+        {
+            "POS": "DT", 
+            "freq": 52, 
+            "word": "another"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 52, 
+            "word": "court"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 52, 
+            "word": "may"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 52, 
+            "word": "took"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 51, 
+            "word": "little"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 51, 
+            "word": "years"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 50, 
+            "word": "always"
+        }
+    ], 
+    "chp4": [
+        {
+            "POS": "MD", 
+            "freq": 236, 
+            "word": "would"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 221, 
+            "word": "said"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 186, 
+            "word": "gawaine"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 183, 
+            "word": "lancelot"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 176, 
+            "word": "mordred"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 173, 
+            "word": "king"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 169, 
+            "word": "like"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 159, 
+            "word": "arthur"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 148, 
+            "word": "sir"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 132, 
+            "word": "could"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 126, 
+            "word": "one"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 121, 
+            "word": "man"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 107, 
+            "word": "go"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 90, 
+            "word": "come"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 87, 
+            "word": "queen"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 86, 
+            "word": "might"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 86, 
+            "word": "old"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 84, 
+            "word": "agravaine"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 84, 
+            "word": "people"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 80, 
+            "word": "ye"
+        }, 
+        {
+            "POS": "PRP", 
+            "freq": 78, 
+            "word": "us"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 77, 
+            "word": "must"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 77, 
+            "word": "think"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 74, 
+            "word": "see"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 73, 
+            "word": "gareth"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 73, 
+            "word": "time"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 72, 
+            "word": "well"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 70, 
+            "word": "good"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 70, 
+            "word": "say"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 66, 
+            "word": "know"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 65, 
+            "word": "shall"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 63, 
+            "word": "made"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 62, 
+            "word": "away"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 59, 
+            "word": "back"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 56, 
+            "word": "even"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 56, 
+            "word": "hand"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 55, 
+            "word": "let"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 54, 
+            "word": "head"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 53, 
+            "word": "never"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 53, 
+            "word": "yes"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 51, 
+            "word": "door"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 51, 
+            "word": "guenever"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 50, 
+            "word": "asked"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 49, 
+            "word": "men"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 48, 
+            "word": "always"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 48, 
+            "word": "came"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 48, 
+            "word": "fight"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 48, 
+            "word": "justice"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 48, 
+            "word": "looked"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 47, 
+            "word": "perhaps"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 46, 
+            "word": "want"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 44, 
+            "word": "look"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 42, 
+            "word": "killed"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 42, 
+            "word": "right"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 41, 
+            "word": "god"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 41, 
+            "word": "round"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 40, 
+            "word": "began"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 40, 
+            "word": "nothing"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 39, 
+            "word": "room"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 38, 
+            "word": "england"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 38, 
+            "word": "make"
+        }, 
+        {
+            "POS": "IN", 
+            "freq": 38, 
+            "word": "without"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 37, 
+            "word": "done"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 37, 
+            "word": "last"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 37, 
+            "word": "long"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 37, 
+            "word": "may"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 37, 
+            "word": "something"
+        }, 
+        {
+            "POS": "CD", 
+            "freq": 37, 
+            "word": "two"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 37, 
+            "word": "used"
+        }, 
+        {
+            "POS": "MD", 
+            "freq": 36, 
+            "word": "ca"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 36, 
+            "word": "eyes"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 36, 
+            "word": "left"
+        }, 
+        {
+            "POS": "RB", 
+            "freq": 36, 
+            "word": "still"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 35, 
+            "word": "lord"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 35, 
+            "word": "poor"
+        }, 
+        {
+            "POS": "VBN", 
+            "freq": 35, 
+            "word": "put"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 34, 
+            "word": "get"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 34, 
+            "word": "mother"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 34, 
+            "word": "nobody"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 34, 
+            "word": "stood"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 34, 
+            "word": "turned"
+        }, 
+        {
+            "POS": "VBG", 
+            "freq": 33, 
+            "word": "going"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 33, 
+            "word": "thing"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 33, 
+            "word": "voice"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 33, 
+            "word": "way"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 32, 
+            "word": "course"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 32, 
+            "word": "knights"
+        }, 
+        {
+            "POS": "NNS", 
+            "freq": 32, 
+            "word": "things"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 32, 
+            "word": "war"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 31, 
+            "word": "kill"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 31, 
+            "word": "took"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 30, 
+            "word": "mean"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 30, 
+            "word": "tell"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 30, 
+            "word": "thought"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 29, 
+            "word": "brother"
+        }, 
+        {
+            "POS": "VBP", 
+            "freq": 29, 
+            "word": "face"
+        }, 
+        {
+            "POS": "VB", 
+            "freq": 29, 
+            "word": "give"
+        }, 
+        {
+            "POS": "JJ", 
+            "freq": 28, 
+            "word": "jenny"
+        }, 
+        {
+            "POS": "NN", 
+            "freq": 28, 
+            "word": "life"
+        }, 
+        {
+            "POS": "VBD", 
+            "freq": 28, 
+            "word": "went"
+        }
+    ]
+}
