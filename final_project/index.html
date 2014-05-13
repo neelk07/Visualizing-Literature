@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Harry Potter - New Entities</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<style>
+		.axis path,
+.axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-family: 'Open Sans Condensed', 'sans-serif';
+	font-size: 11px;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+#mbars{
+	margin-left: 20em;
+	margin-top: 1em;
+}
+
+.legend {
+	            padding: 5px;
+	            font: 10px sans-serif;
+	            background: yellow;
+	            box-shadow: 2px 2px 1px #888;
+	            margin: 20px;
+            }
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="btn-group pull-right">
+  				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+   						 Harry Potter Books <span class="caret"></span>
+ 				</button>
+  				<ul class="dropdown-menu" role="menu">
+   					<li><a class="m" value="hp1" href="#">Harry Potter and the Sorcerer's Stone</a></li>
+    				<li><a class="m" value="hp2" href="#">Harry Potter and the Chamber of Secrets</a></li>
+    				<li><a class="m" value="hp3" href="#">Harry Potter and the Prisoner of Azaban</a></li>
+    				<li><a class="m" value="hp4" href="#">Harry Potter and the Goblet of Fire</a></li>
+    				<li><a class="m" value="hp5" href="#">Harry Potter and the Order of the Phoenix</a></li>
+    				<li><a class="m" value="hp6" href="#">Harry Potter and the Half-Blood Prince</a></li>
+    				<li><a class="m" value="hp7" href="#">Harry Potter and the Deathly Hallows</a></li>
+  				</ul>
+			</div>
+
+		<div id="mbars">
+		</div>
+	    </div>
+		<script type="text/javascript">
+		var w = 750;                        //width
+		var h = 500;                        //height
+		var padding = {top: 30, right: 50, bottom: 50, left:30};
+		var dataset;
+		//LOAD FROM LOCAL JSON FILE
+		var summary = (function() {
+		        var json = null;
+		        $.ajax({
+		            'async': false,
+		            'global': false,
+		            'url': "data/summary.json",
+		            'dataType': "json",
+		            'success': function (data) {
+		                json = data;
+		            }
+		        });
+		        return json;
+		    })();
+		var hp_hash =
+		{
+			'Harry Potter and the Sorcerer\'s Stone': ['The Boy Who Lived',
+														'The Vanishing Glass',
+														'The Letters From No One',
+														'The Keeper of the Keys',
+														'Diagon Alley',
+														'The Journey From Platform Nine and Three-Quarters',
+														'The Sorting Hat',
+														'The Potions Master',
+														'The Midnight Duel',
+														'Halloween',
+														'Quidditch',
+														'The Mirror of Erised',
+														'Nicolas Flamel',
+														'Norbert the Norwegian Ridgeback',
+														'The Forbidden Forest',
+														'Through the Trapdoor',
+														'The Man With Two Faces'],
+			'Harry Potter and the Chamber of Secrets': ['The Worst Birthday',
+														'Dobby’s Warning',
+														'The Burrow',
+														'At Flourish and Blotts',
+														'The Whomping Willow',
+														'Gilderoy Lockhart',
+														'Mudbloods and Murmurs',
+														'The Deathday Party',
+														'The Writing on the Wall',
+														'The Rogue Bludger',
+														'The Dueling Club',
+														'The Polyjuice Potion',
+														'The Very Secret Diary',
+														'Cornelius Fudge',
+														'Aragog',
+														'The Chamber of Secrets',
+														'The Heir of Slytherin',
+														'Dobby’s Reward'],
+			'Harry Potter and the Prisoner of Azkaban': ['Owl Post',
+														'Aunt Marge’s Big Mistake',
+														'The Knight Bus',
+														'The Leaky Cauldron',
+														'The Dementor',
+														'Talons and Tea Leaves',
+														'The Boggart in the Wardrobe',
+														'Flight of the Fat Lady',
+														'Grim Defeat',
+														'The Marauder’s Map',
+														'The Firebolt',
+														'The Patronus',
+														'Gryffindor Versus Ravenclaw',
+														'Snape’s Grudge',
+														'The Quidditch Final',
+														'Professor Trelawney’s Prediction',
+														'Cat, Rat, and Dog',
+														'Moony, Wormtail, Padfoot, and Prongs',
+														'The Servant of Lord Voldemort',
+														'The Dementor’s Kiss',
+														'Hermione’s Secret',
+														'Owl Post Again'],
+				'Harry Potter and the Goblet of Fire': ['The Riddle House',
+														'The Scar',
+														'The Invitation',
+														'Back to the Burrow',
+														'Weasleys’ Wizard Wheezes',
+														'The Portkey',
+														'Bagman and Crouch',
+														'The Quidditch World Cup',
+														'The Dark Mark',
+														'Mayhem at the Ministry',
+														'Aboard the Hogwarts Express',
+														'The Triwizard Tournament',
+														'Mad-Eye Moody',
+														'The Unforgivable Curses',
+														'Beauxbatons and Durmstrang',
+														'The Goblet of Fire',
+														'The Four Champions',
+														'The Weighing of the Wands',
+														'The Hungarian Horntail',
+														'The First Task',
+														'The House-Elf Liberation Front',
+														'The Unexpected Task',
+														'The Yule Ball',
+														'Rita Skeeter’s Scoop',
+														'The Egg and the Eye',
+														'The Second Task',
+														'Padfoot Returns',
+														'The Madness of Mr. Crouch',
+														'The Dream',
+														'The Pensieve',
+														'The Third Task',
+														'Flesh, Blood, and Bone',
+														'The Death Eaters',
+														'Priori Incantatem',
+														'Veritaserum',
+														'The Parting of the Ways',
+														'The Beginning'],
+			'Harry Potter and the Order of the Phoenix': ['Dudley Demented',
+														'A Peck of Owls',
+														'The Advance Guard',
+														'Number Twelve, Grimmauld Place',
+														'The Order of the Phoenix',
+														'The Noble and Most Ancient House of Black',
+														'The Ministry of Magic',
+														'The Hearing',
+														'The Woes of Mrs. Weasley',
+														'Luna Lovegood',
+														'The Sorting Hat’s New Song',
+														'Professor Umbridge',
+														'Detention With Dolores',
+														'Percy and Padfoot',
+														'The Hogwarts High Inquisitor',
+														'In the Hog’s Head',
+														'Educational Decree Number Twenty-Four',
+														'Dumbledore’s Army',
+														'The Lion and the Serpent',
+														'Hagrid’s Tale',
+														'The Eye of the Snake',
+														'St Mungo’s Hospital for Magical Maladies and Injuries',
+														'Christmas on the Closed Ward',
+														'Occlumency',
+														'The Beetle at Bay',
+														'Seen and Unforseen',
+														'The Centaur and the Sneak',
+														'Snape’s Worst Memory',
+														'Career Advice',
+														'Grawp',
+														'O.W.L.s',
+														'Out of the Fire',
+														'Fight and Flight',
+														'The Department of Mysteries',
+														'Beyond the Veil',
+														'The Only One He Ever Feared',
+														'The Lost Prophecy',
+														'The Second War Begins'],
+			'Harry Potter and the Half-Blood Prince': ['The Other Minister',
+														'Spinner’s End',
+														'Will and Won’t',
+														'Horace Slughorn',
+														'An Excess of Phlegm',
+														'Draco’s Detour',
+														'The Slug Club',
+														'Snape Victorious',
+														'The Half-Blood Prince',
+														'The House of Gaunt',
+														'Hermione’s Helping Hand',
+														'Silver and Opals',
+														'The Secret Riddle',
+														'Felix Felicis',
+														'The Unbreakable Vow',
+														'A Very Frosty Christmas',
+														'A Sluggish Memory',
+														'Birthday Surprises',
+														'Elf Tails',
+														'Lord Voldemort’s Request',
+														'The Unknowable Room',
+														'After the Burial',
+														'Horcruxes',
+														'Sectumsempra',
+														'The Seer Overheard',
+														'The Cave',
+														'The Lightning-Struck Tower',
+														'Flight of the Prince',
+														'The Phoenix Lament',
+														'The White Tomb'],
+			'Harry Potter and the Deathly Hallows': ['The Dark Lord Ascending',
+														'In Memoriam',
+														'The Dursleys Departing',
+														'The Seven Potters',
+														'Fallen Warrior',
+														'The Ghoul in Pyjamas',
+														'The Will of Albus Dumbledore',
+														'The Wedding',
+														'A Place to Hide',
+														'Kreacher’s Tale',
+														'The Bribe',
+														'Magic is Might',
+														'The Muggle-Born Registration Commission',
+														'The Thief',
+														'The Goblin’s Revenge',
+														'Godric’s Hollow',
+														'Bathilda’s Secret',
+														'The Life and Lies of Albus Dumbledore',
+														'The Silver Doe',
+														'Xenophilius Lovegood',
+														'The Tale of the Three Brothers',
+														'The Deathly Hallows',
+														'Malfoy Manor',
+														'The Wandmaker',
+														'Shell Cottage',
+														'Gringotts',
+														'The Final Hiding Place',
+														'The Missing Mirror',
+														'The Lost Diadem',
+														'The Sacking of Severus Snape',
+														'The Battle of Hogwarts',
+														'The Elder Wand',
+														'The Prince’s Tale',
+														'The Forest Again',
+														'King’s Cross',
+														'The Flaw in the Plan'],}
+
+
+		var name = "Harry Potter and the Sorcerer's Stone";
+		//Set up stack method
+		var stack = d3.layout.stack();
+
+		d3.json("data/unique_entity_json/hp1_unique_word.json",function(json){
+			dataset = json;
+
+			//Data, stacked
+			stack(dataset);
+
+			var color_hash = {
+				    0 : ["Unique/New Entities","#ac3b39"],
+					1 : ["Old Entities","#4778C2"],
+			};
+
+
+			//Set up scales
+			var xScale = d3.scale.linear()
+				.domain([0,				
+					d3.max(dataset, function(d) {
+						return d3.max(d, function(d) {
+							console.log(d.time);
+							return d.time;
+
+						});
+					})
+				])
+				.range([h,0]);
+
+
+			var yScale = d3.scale.linear()
+				.domain([0,				
+					d3.max(dataset, function(d) {
+						return d3.max(d, function(d) {
+							return d.y0 + d.y;
+						});
+					})
+				])
+				.range([h-padding.bottom-padding.top,0]);
+
+
+			var xAxis = d3.svg.axis()
+						   .scale(xScale)
+						   .orient("bottom")
+						   .ticks(
+							   	d3.max(dataset, function(d) {
+									return d3.max(d, function(d) {
+										return d.time;
+
+									});
+								})
+						   	);
+
+			var yAxis = d3.svg.axis()
+						   .scale(yScale)
+						   .orient("left")
+						   .ticks(10);
+
+
+
+			//Easy colors accessible via a 10-step ordinal scale
+			var colors = d3.scale.category10();
+
+			//Create SVG element
+			var svg = d3.select("#mbars")
+						.append("svg")
+						.attr("width", w)
+						.attr("height", h);
+
+			/* Initialize tooltip */
+			tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return hp_hash[name][d.time-1] + " - " + d.y; });
+
+			/* Invoke the tip in the context of your visualization */
+			svg.call(tip)
+
+			// Add a group for each row of data
+			var groups = svg.selectAll("g")
+				.data(dataset)
+				.enter()
+				.append("g")
+				.attr("class","rgroups")
+				.attr("transform","translate("+ padding.left + "," + (h - padding.bottom) +")")
+				.style("fill", function(d, i) {
+					return color_hash[dataset.indexOf(d)][1];
+				});
+
+
+
+			// Add a rect for each data value
+			var rects = groups.selectAll("rect")
+				.data(function(d) { return d; })
+				.enter()
+				.append("rect")
+				.attr("width", 2)
+				.on('mouseover',function (d){ 
+					tip.show
+					s_r.html( "<h3>" + "<strong>SUMMARY</strong>" + " - Chapter " + d.time + " : <h4>" + summary[name][d.time-1] + "</h4>" ).style("visibility", "visible").style("font-size", "18px").style("font-family", "Open Sans Condensed");
+				})
+  				.on('mouseout',tip.hide)
+				.style("fill-opacity",1e-6);
+
+
+
+			rects.transition()
+			     .duration(function(d,i){
+			    	 return 500 * i;
+			     })
+			     .ease("linear")
+			    .attr("x", function(d) {
+					return xScale(new Date(d.time));
+				})
+				.attr("y", function(d) {
+					return -(- yScale(d.y0) - yScale(d.y) + (h - padding.top - padding.bottom)*2);
+				})
+				.attr("height", function(d) {
+					return -yScale(d.y) + (h - padding.top - padding.bottom);
+				})
+				.attr("width", 15)
+				.style("fill-opacity",1);
+
+				svg.append("g")
+					.attr("class","x axis")
+					.attr("transform","translate(40," + (h - padding.bottom) + ")")
+					.call(xAxis);
+
+
+				svg.append("g")
+					.attr("class","y axis")
+					.attr("transform","translate(" + padding.left + "," + padding.top + ")")
+					.call(yAxis);
+
+			svg.append("text")
+				.attr("transform","rotate(-90)")
+				.attr("y", 0)
+				.attr("x", 0-(h/2))
+				.attr("dy","1em")
+				.text("");
+
+			svg.append("text")
+			   .attr("class","xtext")
+			   .attr("x",w/2 - padding.left)
+			   .attr("y",h - 5)
+			   .attr("text-anchor","middle")
+			   .text("Chapter");
+
+			svg.append("text")
+	        .attr("class","title")
+	        .attr("x", (w / 2))             
+	        .attr("y", 20)
+	        .attr("text-anchor", "middle")  
+	        .style("font-size", "20px") 
+	        .style("text-decoration", "underline")  
+	       	.style("text-decoration", "bold")  
+	        .text("New Entities Introduced in the Harry Potter World");
+
+	        var s_r = d3.select("body")
+		    .append("div")
+		    .attr("class", "remove")
+		    .style("position", "absolute")
+		    .style("z-index", "20")
+		    .style("width", w + "px")
+		    .style("height", "50px")
+		    .style("top", h+"px")
+		    .style("left", w/4+"px")
+		    .text("");
+
+			//On click, update with new data			
+			d3.selectAll(".m")
+				.on("click", function() {
+					var date = this.getAttribute("value");
+					console.log(date);
+					var str;
+					if(date == "hp1"){
+						str = "data/unique_entity_json/hp1_unique_word.json";
+						name = "Harry Potter and the Sorcerer's Stone";
+					}else if(date == "hp2"){
+						str = "data/unique_entity_json/hp2_unique_word.json";
+						name = "Harry Potter and the Chamber of Secrets";
+					}else if(date == "hp3"){
+						str = "data/unique_entity_json/hp3_unique_word.json";
+						name = "Harry Potter and the Prisoner of Azkaban";
+					}else if(date == "hp4"){
+						str = "data/unique_entity_json/hp4_unique_word.json";
+						name = "Harry Potter and the Goblet of Fire";
+					}else if(date == "hp5"){
+						str = "data/unique_entity_json/hp5_unique_word.json";
+						name = "Harry Potter and the Order of Phoenix";
+					}else if(date == "hp6"){
+						str = "data/unique_entity_json/hp6_unique_word.json";
+						name = "Harry Potter and the Half-Blood Prince";
+					}else{
+						str = "data/unique_entity_json/hp7_unique_word.json";
+						name = "Harry Potter and the Deathly Hallows";
+					}
+
+					d3.json(str,function(json){
+
+						dataset = json;
+						stack(dataset);
+
+						console.log(dataset);
+
+						xScale.domain([0,
+							d3.max(dataset, function(d) {
+											return d3.max(d, function(d) {
+												return d.time;
+											});
+										})
+									])
+						.rangeRound([0, w-padding.left-padding.right]);
+
+						yScale.domain([0,				
+										d3.max(dataset, function(d) {
+											return d3.max(d, function(d) {
+												return d.y0 + d.y;
+											});
+										})
+									])
+									.range([h-padding.bottom-padding.top,0]);
+
+						xAxis.scale(xScale)
+						     .ticks(
+						     		d3.max(dataset, function(d) {
+											return d3.max(d, function(d) {
+												return d.time;
+											});
+										}));
+						     
+
+						yAxis.scale(yScale)
+						     .orient("left")
+						     .ticks(10);
+
+						/* Initialize tooltip */
+						tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return hp_hash[name][d.time-1] + " - " + d.y; });
+
+						/* Invoke the tip in the context of your visualization */
+						svg.call(tip)
+					    
+						 groups = svg.selectAll(".rgroups")
+		                    .data(dataset);
+
+		                    groups.enter().append("g")
+		                    .attr("class","rgroups")
+		                    .attr("transform","translate("+ padding.left + "," + (h - padding.bottom) +")")
+		                    .style("fill",function(d,i){
+		                        return color(i);
+		                    });
+
+
+		                    rect = groups.selectAll("rect")
+		                    .on('mouseover',function (d){ 
+								s_r.html( "<h3>" + "<strong>SUMMARY</strong>" + " - Chapter " + d.time + " : <h4>" + summary[name][d.time-1] + "</h4>" ).style("visibility", "visible").style("font-size", "18px").style("font-family", "Open Sans Condensed");
+							})
+  							.on('mouseout', tip.show)
+		                    .data(function(d){return d;});
+
+		                    rect.enter()
+		                      .append("rect")
+		                      .attr("x",w)
+		                      .attr("width",1)
+		                      .style("fill-opacity",1e-6);
+
+		                rect.transition()
+		                    .duration(1000)
+		                    .ease("linear")
+		                    .attr("x",function(d){
+		                        return xScale(d.time);
+		                    })
+		                    .attr("y",function(d){
+		                        return -(- yScale(d.y0) - yScale(d.y) + (h - padding.top - padding.bottom)*2);
+		                    })
+		                    .attr("height",function(d){
+		                        return -yScale(d.y) + (h - padding.top - padding.bottom);
+		                    })
+		                    .attr("width",15)
+		                    .style("fill-opacity",1);
+
+		                rect.exit()
+					       .transition()
+					       .duration(1000)
+					       .ease("circle")
+					       .attr("x",w)
+					       .remove();
+
+		                groups.exit()
+					       .transition()
+					       .duration(1000)
+					       .ease("circle")
+					       .attr("x",w)
+					       .remove();
+
+
+						svg.select(".x.axis")
+						   .transition()
+						   .duration(1000)
+						   .ease("circle")
+						   .call(xAxis);
+
+						svg.select(".y.axis")
+						   .transition()
+						   .duration(1000)
+						   .ease("circle")
+						   .call(yAxis);
+
+						svg.select(".xtext")
+						   .text("Chapter");
+
+						svg.select(".title")
+						.attr("font-family","Open Sans Condensed")
+				        .text("New Entities in "+ name);
+					});			
+				});
+
+
+		});
+
+		</script>
+	</body>
+</html>

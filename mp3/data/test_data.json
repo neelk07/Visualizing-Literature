@@ -1,0 +1,34 @@
+[
+    {
+        "imports": [ 
+            "Marian",
+            "Ector"
+        ], 
+        "name": "Archimedes",
+        "size": 123
+    }, 
+    {
+        "imports": [
+            "Ector"
+        ], 
+        "name": "Hob",
+        "size": 324
+    }, 
+    {
+        "imports": [
+            "Archimedes", 
+            "Ector"
+        ], 
+        "name": "Marian",
+        "size": 503
+    }, 
+    {
+        "imports": [
+            "Archimedes", 
+            "Marian", 
+            "Hob"
+        ], 
+        "name": "Ector",
+        "size": 792
+    }
+]

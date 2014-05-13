@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node {
+  font: 300 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: black;
+}
+
+.node:hover {
+  fill: #000;
+}
+
+.link {
+  stroke: steelblue;
+  stroke-opacity: .2;
+  fill: none;
+  pointer-events: none;
+}
+
+.node:hover,
+.node--source,
+.node--target {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.node--source {
+  fill: #2ca02c;
+}
+
+.node--target {
+  fill: gray;
+}
+
+.link--source,
+.link--target {
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+.link--source {
+  stroke: #d62728;
+}
+    
+.link--target {
+  stroke: #2ca02c;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var diameter = 750,
+    radius = diameter / 2,
+    innerRadius = radius - 120;
+
+var cluster = d3.layout.cluster()
+    .size([360, innerRadius])
+    .sort(null)
+    .value(function(d) { return d.size; });
+
+var bundle = d3.layout.bundle();
+
+var line = d3.svg.line.radial()
+    .interpolate("bundle")
+    .tension(.85)
+    .radius(function(d) { return d.y; })
+    .angle(function(d) { return d.x / 180 * Math.PI; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+  .append("g")
+    .attr("transform", "translate(" + radius + "," + radius + ")");
+
+var link = svg.append("g").selectAll(".link"),
+    node = svg.append("g").selectAll(".node");
+    
+    
+var hash = 
+    {
+    "Archimedes Merlyn": {
+        "person2": "Merlyn", 
+        "numDialogues": 1, 
+        "person1": "Archimedes", 
+        "score": -0.5862068965517241, 
+        "numQuotes": 2
+    }, 
+    "Ector Pellinore": {
+        "person2": "Pellinore", 
+        "numDialogues": 2, 
+        "person1": "Ector", 
+        "score": -0.695867432709538, 
+        "numQuotes": 96
+    }, 
+    "Merlyn Pellinore": {
+        "person2": "Pellinore", 
+        "numDialogues": 1, 
+        "person1": "Merlyn", 
+        "score": -0.03825136612021858, 
+        "numQuotes": 8
+    }, 
+    "Kay LittleJohn": {
+        "person2": "LittleJohn", 
+        "numDialogues": 1, 
+        "person1": "Kay", 
+        "score": -0.8862876254180602, 
+        "numQuotes": 12
+    }, 
+    "Ector Grummore": {
+        "person2": "Grummore", 
+        "numDialogues": 1, 
+        "person1": "Ector", 
+        "score": -0.5319148936170213, 
+        "numQuotes": 31
+    }, 
+    "Pellinore Wart": {
+        "person2": "Wart", 
+        "numDialogues": 1, 
+        "person1": "Pellinore", 
+        "score": -0.04529616724738676, 
+        "numQuotes": 25
+    }, 
+    "Kay Wart": {
+        "person2": "Wart", 
+        "numDialogues": 9, 
+        "person1": "Kay", 
+        "score": -0.4272968228898787, 
+        "numQuotes": 88
+    }, 
+    "Ector Hob": {
+        "person2": "Hob", 
+        "numDialogues": 1, 
+        "person1": "Ector", 
+        "score": -0.751004016064257, 
+        "numQuotes": 52
+    }, 
+    "Marian Robin": {
+        "person2": "Robin", 
+        "numDialogues": 1, 
+        "person1": "Marian", 
+        "score": 1.0, 
+        "numQuotes": 2
+    }, 
+    "Merlyn Wart": {
+        "person2": "Wart", 
+        "numDialogues": 10, 
+        "person1": "Merlyn", 
+        "score": -0.649426011171629, 
+        "numQuotes": 219
+    }, 
+    "LittleJohn Robin": {
+        "person2": "Robin", 
+        "numDialogues": 1, 
+        "person1": "LittleJohn", 
+        "score": -0.45622119815668205, 
+        "numQuotes": 22
+    }, 
+    "Grummore Pellinore": {
+        "person2": "Pellinore", 
+        "numDialogues": 5, 
+        "person1": "Grummore", 
+        "score": -0.3939640724318263, 
+        "numQuotes": 92
+    }, 
+    "Kay Marian": {
+        "person2": "Marian", 
+        "numDialogues": 1, 
+        "person1": "Kay", 
+        "score": -0.7542242703533026, 
+        "numQuotes": 49
+    }, 
+    "Grummore Kay": {
+        "person2": "Kay", 
+        "numDialogues": 1, 
+        "person1": "Grummore", 
+        "score": -0.7857142857142857, 
+        "numQuotes": 15
+    }, 
+    "Balan Wart": {
+        "person2": "Wart", 
+        "numDialogues": 1, 
+        "person1": "Balan", 
+        "score": -0.43050847457627117, 
+        "numQuotes": 20
+    }, 
+    "Archimedes Wart": {
+        "person2": "Wart", 
+        "numDialogues": 1, 
+        "person1": "Archimedes", 
+        "score": -0.6792452830188679, 
+        "numQuotes": 4
+    }, 
+    "Robin Wart": {
+        "person2": "Wart", 
+        "numDialogues": 1, 
+        "person1": "Robin", 
+        "score": 0.16216216216216217, 
+        "numQuotes": 7
+    }, 
+    "Ector Wart": {
+        "person2": "Wart", 
+        "numDialogues": 1, 
+        "person1": "Ector", 
+        "score": -0.6441717791411042, 
+        "numQuotes": 23
+    }, 
+    "Grummore Wart": {
+        "person2": "Wart", 
+        "numDialogues": 1, 
+        "person1": "Grummore", 
+        "score": -0.2898550724637681, 
+        "numQuotes": 12
+    }
+};
+
+d3.json("data/ofk_test.json", function(error, classes) {
+  var nodes = cluster.nodes(packageHierarchy(classes)),
+      links = packageImports(nodes);
+
+  link = link
+      .data(bundle(links))
+    .enter().append("path")
+      .each(function(d) { d.source = d[0], d.target = d[d.length - 1]; })
+      //.attr("class", "link")
+    .attr("class", function(d) { return "link source-" + d.source.key + " target-" + d.target.key; })  
+    .attr("d", line);
+
+  node = node
+      .data(nodes.filter(function(n) { return !n.children; }))
+    .enter().append("text")
+      .attr("class", "node")
+      .attr("dx", function(d) { return d.x < 180 ? 8 : -8; })
+      .attr("dy", ".31em")
+      .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")" + (d.x < 180 ? "" : "rotate(180)"); })
+      .style("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+      .text(function(d) { return d.key; })
+      .on("mouseover", mouseovered)
+      .on("mouseout", mouseouted);
+});
+    
+function ColorLuminance(hex, lum) {
+
+	// validate hex string
+	hex = String(hex).replace(/[^0-9a-f]/gi, '');
+	if (hex.length < 6) {
+		hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+	}
+	lum = lum || 0;
+
+	// convert to decimal and change luminosity
+	var rgb = "#", c, i;
+	for (i = 0; i < 3; i++) {
+		c = parseInt(hex.substr(i*2,2), 16);
+		c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+		rgb += ("00"+c).substr(c.length);
+	}
+
+	return rgb;
+}
+
+function mouseovered(d) {
+    
+    //CUSTOM IMPLEMENATION    
+    var children = d.imports;
+    var color = new Array("#00FF00", "#FF0000", "#FFFF00");
+    for(var i = 0; i<children.length; i++)
+    {
+        var name = children[i];
+        var info = null;
+        if(hash[d.key + " " + name] == undefined)
+            info = hash[name + " " + d.key];
+        else
+            info = hash[d.key + " " + name];
+        
+        console.log(info);
+        var score = info.score;
+        var numQuotes = info.numQuotes;
+        var numDialogues = info.numDialogues;
+        var strong = numQuotes/numDialogues % 5;
+        strong = strong + 1;
+        console.log(strong + "px");
+        
+        
+        var chosen_color = null; 
+        
+        if(score < -.5)
+            chosen_color = color[1];
+        else if(score > .5)
+            chosen_color = color[0];
+        else
+            chosen_color = color[2];
+            
+        svg.select("path.link.source-" + d.key+".target-"+name)
+          .style("stroke",ColorLuminance(chosen_color,score/3))
+          .style("stroke-width", strong + "px")
+          .style("stroke-opacity", 1);
+    }
+    
+    
+    
+  //DEFAULT IMPLEMENATION    
+  node
+      .each(function(n) { n.target = n.source = false; });
+
+  link
+      .classed("link--custom", function(l) { if (l.target === d) return l.source.source = true; })
+      .classed("link--custom", function(l) { if (l.source === d) return l.target.target = true; })
+    .filter(function(l) { return l.target === d || l.source === d; })
+      .each(function() { this.parentNode.appendChild(this); });
+
+  node
+      .classed("node--target", function(n) { return n.target; })
+      .classed("node--source", function(n) { return n.source; });
+    
+  
+}
+
+function mouseouted(d) {
+  link
+      .classed("link--target", false)
+      .classed("link--source", false);
+
+  node
+      .classed("node--target", false)
+      .classed("node--source", false);
+    
+  svg.selectAll("path.link.source-" + d.key)
+          .style("stroke", "steelblue")
+          .style("stroke-width", "1px")
+          .style("stroke-opacity", .2);
+}
+
+    
+d3.select(self.frameElement).style("height", diameter + "px");
+
+// Lazily construct the package hierarchy from class names.
+function packageHierarchy(classes) {
+  var map = {};
+
+  function find(name, data) {
+    var node = map[name], i;
+    if (!node) {
+      node = map[name] = data || {name: name, children: []};
+      if (name.length) {
+        node.parent = find(name.substring(0, i = name.lastIndexOf(".")));
+        node.parent.children.push(node);
+        node.key = name.substring(i + 1);
+      }
+    }
+    return node;
+  }
+
+  classes.forEach(function(d) {
+    find(d.name, d);
+  });
+
+  return map[""];
+}
+
+// Return a list of imports for the given array of nodes.
+function packageImports(nodes) {
+  var map = {},
+      imports = [];
+
+  // Compute a map from name to node.
+  nodes.forEach(function(d) {
+    map[d.name] = d;
+  });
+
+  // For each import, construct a link from the source to target node.
+  nodes.forEach(function(d) {
+    if (d.imports) d.imports.forEach(function(i) {
+      imports.push({source: map[d.name], target: map[i]});
+    });
+  });
+
+  return imports;
+}
+
+</script>

@@ -1,0 +1,112 @@
+[
+    {
+        "imports": [
+            "Wart", 
+            "Merlyn"
+        ], 
+        "name": "Archimedes",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Ector"
+        ], 
+        "name": "Hob",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Robin", 
+            "Kay"
+        ], 
+        "name": "Marian",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Grummore", 
+            "Pellinore", 
+            "Hob", 
+            "Wart"
+        ], 
+        "name": "Ector",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Ector", 
+            "Pellinore", 
+            "Wart", 
+            "Kay"
+        ], 
+        "name": "Grummore",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Wart", 
+            "LittleJohn", 
+            "Marian"
+        ], 
+        "name": "Robin",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Robin",
+            "Kay"
+        ], 
+        "name": "LittleJohn",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Wart", 
+            "Archimedes", 
+            "Pellinore"
+        ], 
+        "name": "Merlyn",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Grummore", 
+            "Wart", 
+            "Ector", 
+            "Merlyn"
+        ], 
+        "name": "Pellinore",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Grummore", 
+            "Wart", 
+            "Marian",
+            "LittleJohn"
+        ], 
+        "name": "Kay",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Grummore", 
+            "Pellinore", 
+            "Kay", 
+            "Merlyn", 
+            "Balan", 
+            "Archimedes", 
+            "Robin", 
+            "Ector"
+        ], 
+        "name": "Wart",
+        "size": 1
+    }, 
+    {
+        "imports": [
+            "Wart"
+        ], 
+        "name": "Balan",
+        "size": 1
+    }
+]
